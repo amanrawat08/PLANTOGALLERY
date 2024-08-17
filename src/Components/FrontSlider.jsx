@@ -32,7 +32,7 @@ export default function FrontSlider() {
 
   return (
     <>
-      <div className="slider-container mt-[118px]">
+      <div className="slider-container">
         <Slider {...settings}>
           {frontImg.map((item, i) => (
             <div className="w-full  bg-yellow-400">

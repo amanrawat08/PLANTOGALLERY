@@ -154,9 +154,8 @@ export default function Navbar() {
   ];
 
   return (
-    <span className="fixed top-0 left-0 right-0 z-10">
+    <span className=" sticky top-0 z-10">
       <div className="bg-green-700 w-screen text-center text-white">
-        {/*   */}
         <TypingAnimator
           textArray={textAni}
           textColor="white"
@@ -200,7 +199,7 @@ export default function Navbar() {
           </button>
           <button className="text-4xl relative m-2 hover:text-white hover:bg-green-700 p-2 rounded transition-all">
             <CiShoppingCart />
-            <span className="absolute text-red-600 top-2 right-3 text-sm font-bold bg-red-600 text-yellow-50 px-1 py-.5 rounded-full ">
+            <span className="absolute text-white top-2 right-3 text-sm font-bold bg-red-600  px-1 py-.5 rounded-full ">
               0
             </span>
           </button>
@@ -213,10 +212,10 @@ export default function Navbar() {
             key={i}
           >
             {item.name}
-            <ul className="absolute left-0  bg-white rounded text-green-600 w-[200px] hidden group-hover:block">
+            <ul className="absolute left-0  bg-white rounded text-green-600 w-[200px] hidden group-hover:block pb-2">
               {item.list.map((listItem, k) => (
                 <li
-                  className="text-center hover:bg-slate-800  w-[100%] hover:text-white font-bold"
+                  className="text-center hover:bg-slate-800  w-[100%] hover:text-white py-1"
                   key={k}
                 >
                   {listItem}
