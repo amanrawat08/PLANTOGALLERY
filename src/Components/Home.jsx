@@ -5,6 +5,8 @@ import FrontSlider from "./FrontSlider";
 import FrontCard from "./FrontCard";
 import FlowerBox from "./FlowerBox";
 import ServiceCard from "./ServiceCard";
+import About from "./About";
+import Service2 from "./Service2";
 function Home() {
   return (
     <>
@@ -12,7 +14,8 @@ function Home() {
       <IndorePlant />
       <FrontCard />
       <FlowerBox />
-      <ServiceCard />
+      <About />
+      <Service2 />
     </>
   );
 }

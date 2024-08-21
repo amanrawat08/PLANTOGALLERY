@@ -73,11 +73,11 @@ function FlowerBox() {
     >
       {data.map((item, i) => (
         <div
-          className=" w-96 rounded-md overflow-hidden"
+          className="xs:w-60 xl:w-96 rounded-md overflow-hidden"
           data-aos="zoom-in"
           data-aos-once="true"
         >
-          <div className="h-80 relative bg-green-200 rounded-md cursor-pointer group">
+          <div className="xs:h-60 xl:h-80 relative bg-green-200 rounded-md cursor-pointer group">
             <img
               className="h-full absolute w-full rounded-md duration-500 transition-all group-hover:scale-110"
               src={item.url}

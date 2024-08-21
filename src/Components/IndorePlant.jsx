@@ -3,7 +3,7 @@ import React from "react";
 function IndorePlant() {
   return (
     <>
-      <div className="mt-2 rounded bg-slate-500 w-[96%] m-auto min-h-[450px] flex items-center flex-wrap overflow-hidden    justify-center  ">
+      <div className="mt-2 rounded  w-[96%] m-auto min-h-[450px] flex items-center flex-wrap overflow-hidden    justify-center  ">
         <div
           data-aos="zoom-in"
           data-aos-once="true"
@@ -15,8 +15,10 @@ function IndorePlant() {
           />
         </div>
 
-        <div className="w-[800px] p-10 bg-slate-500  flex flex-col">
-          <div className="font-bold text-2xl">Indoor Plant Collection</div>
+        <div className="w-[800px] p-10 text-gray-500 flex flex-col">
+          <div className="font-bold text-black text-2xl">
+            Indoor Plant Collection
+          </div>
           <div className="  mt-3">
             <div className="mt-1">
               Scientific support for phytoremediation — that’s the word for
@@ -39,7 +41,7 @@ function IndorePlant() {
               biofilters and other technologies.
             </div>
           </div>
-          <button className="text-sm bg-yellow-600 transition-all hover:bg-black hover:text-yellow-500  mt-5 w-28 rounded px-2 py-2 font-bold">
+          <button className="text-sm bg-yellow-600 text-black transition-all hover:bg-black hover:text-yellow-500  mt-5 w-28 rounded px-2 py-2 font-bold">
             BUY NOW
           </button>
         </div>
