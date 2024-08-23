@@ -24,10 +24,10 @@ export default function FrontSlider() {
     AOS.refresh();
   }, []);
   const frontImg = [
-    `https://img.freepik.com/free-photo/beautiful-bicolor-plant-details_23-2149362166.jpg?uid=R154964719&ga=GA1.1.940856582.1720781664&semt=ais_hybrid`,
-    `https://plantogallery.com/cdn/shop/files/IMG_8953_2048x2048_f3b391cb-4829-4203-becf-dc2dbe9003fe_900x.jpg?v=1722505140`,
     `https://plantogallery.com/cdn/shop/files/l-intro-1642621066_1600x.jpg?v=1722416609`,
-    `https://img.freepik.com/free-photo/colorful-flower-is-vase-with-yellow-center_1340-29676.jpg?uid=R154964719&ga=GA1.1.940856582.1720781664&semt=ais_hybrid`,
+    `https://img.freepik.com/premium-photo/pansy-flowering-plant-peat-pot-with-soil-gardening-equipment-wooden-desk_1272857-58566.jpg?w=1060`,
+    `https://img.freepik.com/premium-photo/colorful-zinnia-flower_1234738-370614.jpg?w=1060`,
+    `https://img.freepik.com/free-photo/modern-vases-with-green-pink-light-arrangement_23-2149835498.jpg?t=st=1724238374~exp=1724241974~hmac=382c79b2633f802ffe49631e4fe278b0426a88d907e7dc8703f6ac4db1168552&w=900`,
   ];
 
   return (
@@ -35,8 +35,8 @@ export default function FrontSlider() {
       <div className="slider-container">
         <Slider {...settings}>
           {frontImg.map((item, i) => (
-            <div className="w-full  bg-yellow-400">
-              <img className="w-full h-[32rem]" src={item} alt="Flower" />
+            <div className="w-full  bg-yellow-400" key={i}>
+              <img className="w-full h-[500px]" src={item} alt="Flower" />
             </div>
           ))}
         </Slider>

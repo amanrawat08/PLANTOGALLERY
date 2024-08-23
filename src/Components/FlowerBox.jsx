@@ -73,6 +73,7 @@ function FlowerBox() {
     >
       {data.map((item, i) => (
         <div
+          key={i}
           className="xs:w-60 xl:w-96 rounded-md overflow-hidden"
           data-aos="zoom-in"
           data-aos-once="true"

@@ -4,6 +4,7 @@ import { FaRegHeart } from "react-icons/fa";
 import { FaShoppingCart } from "react-icons/fa";
 import AOS from "aos";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 import "aos/dist/aos.css";
 function Card(props) {
   useEffect(() => {
@@ -32,16 +33,16 @@ function Card(props) {
           </span>
         </div>
         <div className="p-3">
-          <div className="flex items-center ">
+          <div className="flex items-center justify-between">
             <div className="font-semibold hover:text-green-900 transition-all duration-500 cursor-pointer">
               {props.data.name}
             </div>
-            <span className="bg-green-600 flex  items-center  px-1  rounded-md text-white">
+            <span className="bg-green-600 flex  items-center   px-1  rounded-md text-white">
               <span className="text-yellow-600 text-lg">
                 {" "}
                 <TiStarFullOutline />
               </span>{" "}
-              <span>|{props.data.rating}</span>
+              <span> {props.data.rating}</span>
             </span>
           </div>
           <div className="mt-2 mb-2">
@@ -59,9 +60,11 @@ function Card(props) {
             {/* <FaShoppingCart /> */}
             Add To Cart
           </button>
-          <button className="w-64 mt-1 border-none mx-auto flex justify-center items-center hover:text-white  bg-yellow-500 py-1 rounded font-bold hover:bg-green-600 transition-all">
-            Buy Now
-          </button>
+          <Link to={props.data.id}>
+            <button className="w-64 mt-1 border-none mx-auto flex justify-center items-center hover:text-white  bg-yellow-500 py-1 rounded font-bold hover:bg-green-600 transition-all">
+              Buy Now
+            </button>
+          </Link>
         </div>
       </div>
     </>

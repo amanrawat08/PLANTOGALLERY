@@ -3,7 +3,7 @@ import React from "react";
 function About() {
   return (
     <div className=" w-[96%] min-h-60 flex flex-col px-8 items-center justify-center m-auto mt-14  rounded-1xl p-1 rounded-sm">
-      <div className="sm:text-2xl xl:text-3xl font-semibold">
+      <div className="sm:text-3xl xl:text-4xl font-semibold">
         About Plantogallery
       </div>
       <div className="lg:mt-10 w-[80%] text-center text-gray-500">

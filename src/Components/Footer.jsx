@@ -87,18 +87,15 @@ function Footer() {
             news.
           </div>
 
-          <div class="flex items-center w-full mt-7 justify-center">
-            <div class="relative w-full">
+          <div className="flex items-center w-full mt-7 justify-center">
+            <div className="relative w-full">
               <input
                 id="username"
                 name="username"
                 type="text"
                 className="border-b border-gray-300 py-1 focus:border-b-2 focus:border-green-700 transition-colors focus:outline-none peer bg-inherit w-full"
               />
-              <label
-                for="username"
-                className="absolute left-0 top-1 cursor-text peer-focus:text-xs peer-focus:-top-4 transition-all peer-focus:text-green-700"
-              >
+              <label className="absolute left-0 top-1 cursor-text peer-focus:text-xs peer-focus:-top-4 transition-all peer-focus:text-green-700">
                 Name
               </label>
             </div>
@@ -116,7 +113,10 @@ function Footer() {
           <span>Follow us:</span>
           <ul className="flex items-center justify-center ">
             {socialLink.map((item, i) => (
-              <li className="m-1 text-2xl p-1 rounded-lg hover:text-white cursor-pointer transition-all duration-500 hover:bg-black">
+              <li
+                className="m-1 text-2xl p-1 rounded-lg hover:text-white cursor-pointer transition-all duration-500 hover:bg-black"
+                key={i}
+              >
                 {item.img}
               </li>
             ))}
