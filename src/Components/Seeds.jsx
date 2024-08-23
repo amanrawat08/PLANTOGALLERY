@@ -11,3 +11,6 @@ function Seeds() {
 }
 
 export default Seeds;
+{
+  /* <Link to={`${props.data.id}`}></Link> */
+}

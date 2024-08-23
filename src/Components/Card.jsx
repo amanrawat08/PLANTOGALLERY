@@ -60,7 +60,7 @@ function Card(props) {
             {/* <FaShoppingCart /> */}
             Add To Cart
           </button>
-          <Link to={props.data.id}>
+          <Link to={`/${props.data.id}`}>
             <button className="w-64 mt-1 border-none mx-auto flex justify-center items-center hover:text-white  bg-yellow-500 py-1 rounded font-bold hover:bg-green-600 transition-all">
               Buy Now
             </button>

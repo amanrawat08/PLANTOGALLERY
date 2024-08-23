@@ -19,6 +19,7 @@ import Pebbles from "./Components/Pebbles";
 import Gifts from "./Components/Gifts";
 import Accessories from "./Components/Accessories";
 import ProductInfo from "./Components/ProductInfo";
+import Service2 from "./Components/Service2";
 function App() {
   return (
     <>
@@ -36,7 +37,7 @@ function App() {
         <Route path="/Accessories" element={<Accessories />}></Route>
         <Route path="/:id" element={<ProductInfo />}></Route>
       </Routes>
-
+      <Service2 />
       <Footer />
     </>
   );

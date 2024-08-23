@@ -26,7 +26,7 @@ function Service2() {
     },
   ];
   return (
-    <div className="w-[89%] flex flex-wrap justify-center gap-14  min-h-[140px]  m-auto">
+    <div className="w-[89%] flex flex-wrap justify-center gap-14 mt-16 min-h-[140px]  m-auto">
       {serviceData.map((item, i) => (
         <div className="flex justify-center items-center" key={i}>
           <div className="text-3xl ">{item.img}</div>
