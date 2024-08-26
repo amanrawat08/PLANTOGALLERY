@@ -13,7 +13,7 @@ function BottomNav() {
           <ul className="absolute left-0  bg-white rounded text-green-600 w-[200px] hidden group-hover:block pb-2">
             {item.list.map((listItem, k) => (
               <li
-                className="text-center hover:bg-slate-800  w-[100%] hover:text-white py-1"
+                className=" hover:bg-slate-800  w-[100%] hover:text-white px-3 py-1"
                 key={k}
               >
                 {listItem}

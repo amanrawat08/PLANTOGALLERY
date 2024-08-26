@@ -5,6 +5,7 @@ import { CiLinkedin } from "react-icons/ci";
 import { FaGithubAlt } from "react-icons/fa";
 import { CiTwitter } from "react-icons/ci";
 import { CiYoutube } from "react-icons/ci";
+import { Link } from "react-router-dom";
 function Footer() {
   const socialLink = [
     {
@@ -43,41 +44,65 @@ function Footer() {
         <div className="m-4">
           <div className="mb-2 text-[#1e2d7d]">Footer Menu</div>
           <ul>
-            <li className="hover:text-red-600 py-1 transition-all duration-300 cursor-pointer">
+            <Link
+              to="/search"
+              className="block hover:text-red-600 py-1 transition-all duration-300 cursor-pointer"
+            >
               Search
-            </li>
-            <li className="hover:text-red-600 py-1 transition-all duration-300 cursor-pointer">
+            </Link>
+            <Link
+              to="/ContractUs"
+              className="hover:text-red-600 py-1 transition-all duration-300 cursor-pointer"
+            >
               Contract us
-            </li>
-            <li className="hover:text-red-600 py-1 transition-all duration-300 cursor-pointer">
-              Affiates
-            </li>
-            <li className="hover:text-red-600 py-1 transition-all duration-300 cursor-pointer">
+            </Link>
+            <Link
+              to="/tos"
+              className="hover:text-red-600 py-1 block transition-all duration-300 cursor-pointer"
+            >
               Terms of Service
-            </li>
-            <li className="hover:text-red-600 py-1 transition-all duration-300 cursor-pointer">
+            </Link>
+            <Link
+              to="/afflites"
+              className="block hover:text-red-600 py-1 transition-all duration-300 cursor-pointer"
+            >
+              Affiates
+            </Link>
+            <Link
+              to="/refundpolicy"
+              className="hover:text-red-600 py-1 transition-all duration-300 cursor-pointer"
+            >
               Refund policy
-            </li>
+            </Link>
           </ul>
         </div>
         <div className="m-4">
           <div className="mb-2 text-[#1e2d7d]">INFORMATION</div>
           <ul>
-            <li className="hover:text-red-600 py-1 transition-all duration-300 cursor-pointer">
+            <Link
+              to="/about"
+              className="block hover:text-red-600 py-1 transition-all duration-300 cursor-pointer"
+            >
               About Us
-            </li>
-            <li className="hover:text-red-600 py-1 transition-all duration-300 cursor-pointer">
+            </Link>
+            <Link
+              to="/shippingpolicy"
+              className="block hover:text-red-600 py-1 transition-all duration-300 cursor-pointer"
+            >
               Shipping Policy
-            </li>
-            <li className="hover:text-red-600 py-1 transition-all duration-300 cursor-pointer">
+            </Link>
+            <Link
+              to="/privacypolicy"
+              className="hover:text-red-600 py-1 transition-all duration-300 cursor-pointer"
+            >
               Privacy Policy
-            </li>
-            <li className="hover:text-red-600 py-1 transition-all duration-300 cursor-pointer">
+            </Link>
+            <Link
+              to="/t&c"
+              className="block hover:text-red-600 py-1 transition-all duration-300 cursor-pointer"
+            >
               Terms and condition
-            </li>
-            <li className="hover:text-red-600 py-1 transition-all duration-300 cursor-pointer">
-              Refund policy
-            </li>
+            </Link>
           </ul>
         </div>
         <div className="w-72 flex flex-col m-4">

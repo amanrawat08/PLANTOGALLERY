@@ -6,32 +6,27 @@ function FlowerBox() {
   const data = [
     {
       name: "Rose Flower For Your Home",
-      hideurl:
-        "https://img.freepik.com/free-photo/beautiful-red-poinsettia-assortment_23-2149138682.jpg?uid=R154964719&ga=GA1.1.940856582.1720781664&semt=ais_hybrid",
+
       url: "https://img.freepik.com/premium-photo/red-flower-with-red-center-that-says-no-name_1227606-4534.jpg?uid=R154964719&ga=GA1.1.940856582.1720781664&semt=ais_hybrid",
     },
     {
       name: "Best Seeds For Flower",
-      hideurl:
-        "https://img.freepik.com/free-photo/small-flower-with-petals-yellow-table_23-2148069101.jpg?uid=R154964719&ga=GA1.1.940856582.1720781664&semt=ais_hybrid",
+
       url: "https://img.freepik.com/free-photo/goji-berry_144627-13562.jpg?uid=R154964719&ga=GA1.1.940856582.1720781664&semt=ais_hybrid",
     },
     {
       name: "Flower Bulbs For Growing Plant",
-      hideurl:
-        "https://img.freepik.com/free-photo/vertical-closeup-shot-beautiful-red-tulips-blurred-background_181624-33806.jpg?uid=R154964719&ga=GA1.1.940856582.1720781664&semt=ais_hybrid",
+
       url: "https://img.freepik.com/free-photo/vertical-closeup-red-calla-flower-with-long-stamen_181624-4311.jpg?uid=R154964719&ga=GA1.1.940856582.1720781664&semt=ais_hybrid",
     },
     {
       name: "Flower Pots",
-      hideurl:
-        "https://img.freepik.com/premium-photo/gaultheria-flower-plant-indoor-pot-with-red-berries-indoor-home-plant-table-copy-space_88242-15418.jpg?uid=R154964719&ga=GA1.1.940856582.1720781664&semt=ais_hybrid",
+
       url: "https://img.freepik.com/premium-photo/house-plant-anthurium-white-flowerpot-isolated-white-table-beige-background_72679-1984.jpg?uid=R154964719&ga=GA1.1.940856582.1720781664&semt=ais_hybrid",
     },
     {
       name: "Soil and Fertilizer",
-      hideurl:
-        "https://img.freepik.com/premium-photo/flowers-made-felt-mother-day-valentines-day-wedding-birthday-concept_77684-56473.jpg?uid=R154964719&ga=GA1.1.940856582.1720781664&semt=ais_hybrid",
+
       url: "https://img.freepik.com/free-photo/gardening-composition-with-hand-pink-flower_23-2147673273.jpg?uid=R154964719&ga=GA1.1.940856582.1720781664&semt=ais_hybrid",
     },
     {

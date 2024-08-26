@@ -6,6 +6,8 @@ import AOS from "aos";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import "aos/dist/aos.css";
+import AddToCart from "./AddToCart";
+import toast from "react-hot-toast";
 function Card(props) {
   useEffect(() => {
     AOS.init({
@@ -13,6 +15,11 @@ function Card(props) {
     });
     AOS.refresh();
   }, []);
+  //console.log(props.data);
+  const atcHandler = () => {
+    localStorage.setItem("cards", JSON.stringify(props.data));
+    toast.success("Add to Cart Successfully");
+  };
   return (
     <>
       <div
@@ -52,12 +59,19 @@ function Card(props) {
             <span className="ml-2 text-gray-800 line-through">
               &#x20b9;{props.data.fakePrice}
             </span>
+
             <span className="ml-3 text-1xl text-red-800 font-bold">
               {props.data.offer}Off
             </span>
           </div>
-          <button className="w-64 mt-1 border-none mx-auto flex justify-center items-center hover:text-white  bg-yellow-500 py-1 rounded font-bold hover:bg-green-600 transition-all">
-            {/* <FaShoppingCart /> */}
+
+          <button
+            onClick={atcHandler}
+            className="w-64 mt-1 border-none mx-auto flex justify-center
+            items-center hover:text-white bg-yellow-500 py-1 rounded font-bold
+            hover:bg-green-600 transition-all"
+          >
+            {" "}
             Add To Cart
           </button>
           <Link to={`/${props.data.id}`}>

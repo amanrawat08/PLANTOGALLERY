@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./App.css";
+
 import Navbar from "./Components/Navbar";
 import FrontSlider from "./Components/FrontSlider";
 import Card from "./Components/Card";
@@ -7,7 +7,6 @@ import FrontCard from "./Components/FrontCard";
 import FlowerBox from "./Components/FlowerBox";
 import Home from "./Components/Home";
 import Footer from "./Components/Footer";
-import AllProduct from "./Components/AllProduct";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Seeds from "./Components/Seeds";
 import Products from "./Components/Products";
@@ -20,9 +19,24 @@ import Gifts from "./Components/Gifts";
 import Accessories from "./Components/Accessories";
 import ProductInfo from "./Components/ProductInfo";
 import Service2 from "./Components/Service2";
+import ScrollTop from "./Components/ScrollTop";
+import AddToCart from "./Components/AddToCart";
+import ContractUs from "./Components/ContractUs";
+import TOS from "./Components/TOS";
+import RefundPolicy from "./Components/RefundPolicy";
+import ShippingPolicy from "./Components/ShippingPolicy";
+import PrivacyPolicy from "./Components/PrivacyPolicy";
+import TAC from "./Components/TAC";
+import Affiates from "./Components/Afflites";
+import Search from "./Components/Search";
+import About from "./Components/About";
+import CreateAccount from "./Components/CreateAccount";
+import LoginForm from "./Components/LoginForm";
+
 function App() {
   return (
     <>
+      <ScrollTop />
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />}></Route>
@@ -36,7 +50,17 @@ function App() {
         <Route path="/Gifts" element={<Gifts />}></Route>
         <Route path="/Accessories" element={<Accessories />}></Route>
         <Route path="/:id" element={<ProductInfo />}></Route>
+        <Route path="/ContractUs" element={<ContractUs />}></Route>
+        <Route path="/tos" element={<TOS />}></Route>
+        <Route path="/refundpolicy" element={<RefundPolicy />}></Route>
+        <Route path="/shippingpolicy" element={<ShippingPolicy />}></Route>
+        <Route path="/privacypolicy" element={<PrivacyPolicy />}></Route>
+        <Route path="/t&c" element={<TAC />}></Route>
+        <Route path="/afflites" element={<Affiates />}></Route>
+        <Route path="/search" element={<Search />}></Route>
+        <Route path="/about" element={<About />}></Route>
       </Routes>
+
       <Service2 />
       <Footer />
     </>

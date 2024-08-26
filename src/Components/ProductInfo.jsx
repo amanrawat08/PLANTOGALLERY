@@ -7,7 +7,7 @@ function ProductInfo() {
   const { id } = useParams();
   const [count, setCount] = useState(1);
   const Mydata = data.find((item) => item.id === parseInt(id));
-  console.log(Mydata);
+
   return (
     <div
       data-aos="zoom-in"
