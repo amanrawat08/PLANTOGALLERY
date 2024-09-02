@@ -7,19 +7,25 @@ import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import "aos/dist/aos.css";
 import AddToCart from "./AddToCart";
+import Products from "./Products";
 import toast from "react-hot-toast";
+import { addTC } from "../Store/UserSlice";
+import { useDispatch } from "react-redux";
 function Card(props) {
+  const dispatch = useDispatch();
   useEffect(() => {
     AOS.init({
       duration: 1500,
     });
     AOS.refresh();
   }, []);
-  //console.log(props.data);
-  const atcHandler = () => {
-    localStorage.setItem("cards", JSON.stringify(props.data));
+  const atcHandler = (data) => {
     toast.success("Add to Cart Successfully");
+    /* localStorage.setItem("cards", JSON.stringify(props.data)); */
+    /* console.log(data); */
+    dispatch(addTC(data));
   };
+
   return (
     <>
       <div
@@ -66,7 +72,7 @@ function Card(props) {
           </div>
 
           <button
-            onClick={atcHandler}
+            onClick={() => atcHandler(props.data)}
             className="w-64 mt-1 border-none mx-auto flex justify-center
             items-center hover:text-white bg-yellow-500 py-1 rounded font-bold
             hover:bg-green-600 transition-all"
@@ -74,7 +80,7 @@ function Card(props) {
             {" "}
             Add To Cart
           </button>
-          <Link to={`/${props.data.id}`}>
+          <Link to={`/Products/${props.data.id}`}>
             <button className="w-64 mt-1 border-none mx-auto flex justify-center items-center hover:text-white  bg-yellow-500 py-1 rounded font-bold hover:bg-green-600 transition-all">
               Buy Now
             </button>

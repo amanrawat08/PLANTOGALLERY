@@ -30,12 +30,12 @@ import TAC from "./Components/TAC";
 import Affiates from "./Components/Afflites";
 import Search from "./Components/Search";
 import About from "./Components/About";
-import CreateAccount from "./Components/CreateAccount";
-import LoginForm from "./Components/LoginForm";
-
+import Error from "./Components/Error";
+import store from "./Store/index";
+import { Provider } from "react-redux";
 function App() {
   return (
-    <>
+    <Provider store={store}>
       <ScrollTop />
       <Navbar />
       <Routes>
@@ -49,7 +49,7 @@ function App() {
         <Route path="/Pebbles" element={<Pebbles />}></Route>
         <Route path="/Gifts" element={<Gifts />}></Route>
         <Route path="/Accessories" element={<Accessories />}></Route>
-        <Route path="/:id" element={<ProductInfo />}></Route>
+        <Route path="/Products/:id" element={<ProductInfo />}></Route>
         <Route path="/ContractUs" element={<ContractUs />}></Route>
         <Route path="/tos" element={<TOS />}></Route>
         <Route path="/refundpolicy" element={<RefundPolicy />}></Route>
@@ -59,11 +59,12 @@ function App() {
         <Route path="/afflites" element={<Affiates />}></Route>
         <Route path="/search" element={<Search />}></Route>
         <Route path="/about" element={<About />}></Route>
+        <Route path="*" element={<Error />} />
       </Routes>
 
       <Service2 />
       <Footer />
-    </>
+    </Provider>
   );
 }
 

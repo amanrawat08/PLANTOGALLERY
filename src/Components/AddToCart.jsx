@@ -1,5 +1,5 @@
 "use client";
-
+import { useDispatch, useSelector } from "react-redux";
 import { useState } from "react";
 import {
   Dialog,
@@ -38,6 +38,12 @@ const products = [
 ];
 
 export default function AddToCart({ open, setOpen }) {
+  const product = useSelector((item) => {
+    return item.users;
+  });
+  const dispatch = useDispatch();
+
+  const removeData = () => {};
   return (
     <Dialog open={open} onClose={setOpen} className="relative z-10">
       <DialogBackdrop
@@ -77,12 +83,12 @@ export default function AddToCart({ open, setOpen }) {
                         role="list"
                         className="-my-6 divide-y divide-gray-200"
                       >
-                        {products.map((product) => (
+                        {product.map((product) => (
                           <li key={product.id} className="flex py-6">
                             <div className="h-24 w-24 flex-shrink-0 overflow-hidden rounded-md border border-gray-200">
                               <img
                                 alt={product.imageAlt}
-                                src={product.imageSrc}
+                                src={product.url}
                                 className="h-full w-full object-cover object-center"
                               />
                             </div>
@@ -106,6 +112,7 @@ export default function AddToCart({ open, setOpen }) {
 
                                 <div className="flex">
                                   <button
+                                    onClick={() => removeData()}
                                     type="button"
                                     className="font-medium text-indigo-600 hover:text-indigo-500"
                                   >

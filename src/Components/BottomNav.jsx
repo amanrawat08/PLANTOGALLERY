@@ -9,7 +9,7 @@ function BottomNav() {
           className="px-6 hover:bg-green-700 cursor-pointer transition-all relative group"
           key={i}
         >
-          <Link to={item.name}> {item.name}</Link>
+          <Link to={item.label}> {item.name}</Link>
           <ul className="absolute left-0  bg-white rounded text-green-600 w-[200px] hidden group-hover:block pb-2">
             {item.list.map((listItem, k) => (
               <li
